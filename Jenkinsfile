@@ -14,7 +14,8 @@ pipeline {
 
     environment {
         INFLUX_TOKEN = credentials('INFLUX_TOKEN')
-        USER_CREDENTIALS = credentials('STACK_TODO_TEST_USER')
+        USER_CREDENTIALS_EMAIL = $STACK_TODO_TEST_USER_USR
+        USER_CREDENTIALS_PASSWORD = $STACK_TODO_TEST_USER_PSW
     }
 
     agent any
