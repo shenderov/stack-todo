@@ -4,8 +4,8 @@ import {ChangePasswordPage} from "../pages/change-password.page";
 import {TasksPage} from "../pages/tasks.page";
 
 const userName = process.env['TEST_USER_NAME'] || 'Jane Doe';
-const userEmail = process.env['TEST_USER_EMAIL'] || 'jane.doe@company.com';
-const userPassword = process.env['TEST_USER_PASSWORD'] || '';
+const userEmail = process.env['STACK_TODO_TEST_USER_USR'] || 'jane.doe@company.com';
+const userPassword = process.env['STACK_TODO_TEST_USER_PSW'] || '';
 
 export const credentials = {
     name: userName,

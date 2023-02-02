@@ -35,6 +35,7 @@ pipeline {
                     script {
                         echo "Install NPM Dependencies..."
                         sh 'npm i'
+                        sh 'npx playwright install'
                 }
             }
         }
