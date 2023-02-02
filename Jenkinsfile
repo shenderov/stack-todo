@@ -5,7 +5,7 @@ pipeline {
     }
 
     parameters {
-        string(name: "BRANCH", description: "Branch to build from", defaultValue: "master")
+        string(name: "BRANCH", description: "Branch to build from", defaultValue: "main")
         string(name: "BASE_URL", description: "Override default base URL", defaultValue: "http://stackadapt-interview.us-east-1.elasticbeanstalk.com/")
         string(name: "INFLUX_URL", description: "Specify URL to InfluxDB", defaultValue: "https://us-east-1-1.aws.cloud2.influxdata.com")
         string(name: "INFLUX_BUCKET", description: "Specify InfluxDB bucket", defaultValue: "stacktodo")
