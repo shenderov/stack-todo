@@ -48,11 +48,10 @@ pipeline {
             }
         }
     }
-
-    post {
+}
+     post {
             always {
                 archiveArtifacts artifacts: 'test-results/'
             }
         }
-}
 }
