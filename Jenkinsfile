@@ -30,14 +30,14 @@ pipeline {
             }
         }
 
-           stage ('NPM Install') {
-                    steps {
-                        script {
-                            echo "Install NPM Dependencies..."
-                            sh 'npm i'
-                    }
+       stage ('NPM Install') {
+                steps {
+                    script {
+                        echo "Install NPM Dependencies..."
+                        sh 'npm i'
                 }
             }
+        }
 
         stage ('Test') {
             steps {
@@ -47,10 +47,5 @@ pipeline {
             }
         }
     }
-
-    post {
-        always {
-            step([$class: 'Publisher', reportFilenamePattern: '**/testng-results.xml'])
-        }
-    }
+}
 }
