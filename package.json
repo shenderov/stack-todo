@@ -12,5 +12,8 @@
   },
   "dependencies": {
     "@influxdata/influxdb-client": "^1.33.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }
